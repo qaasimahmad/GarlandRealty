@@ -1,0 +1,221 @@
+.auth-container .loader-container,
+.auth-container {
+  position: fixed;
+  width: 50%;
+  height: 95%;
+  overflow-x: hidden;
+  z-index: 900000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: var(--color-bg);
+  font-family: var(--font-family);
+  padding: 2rem 7rem;
+  transition: ease-out 0.5s;
+  backdrop-filter: blur(1);
+}
+
+.auth-container .closeIcon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.auth-container .closeIcon:hover {
+  border: 2px solid var(--color-line);
+  border-radius: 5px;
+}
+
+.auth-container h2 {
+  color: var(--color-text);
+  font-family: var(--font-family3);
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.auth-container h3 {
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 14px;
+  margin: 1rem 0;
+  word-spacing: 3px;
+}
+.auth-container .error {
+  color: red;
+  font-family: var(--font-family2);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: -7px;
+}
+.auth-container label {
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 14px;
+  font-family: var(--font-family3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  /* opacity: 0; */
+  transition: opacity 0.3s ease;
+  text-transform: capitalize;
+  display: none;
+}
+
+.auth-container .emailInput input,
+.auth-container .nameInput input,
+.auth-container .telInput input,
+.auth-container .password input {
+  width: 100%;
+  border-width: 0px 0px 1px 0px;
+  padding: 0.7rem 0;
+  font-family: var(--font-family3);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-size: 16px;
+  user-select: none;
+  margin: 1rem 0 2rem;
+  position: relative;
+}
+.auth-container .emailInput input:focus,
+.auth-container .nameInput input:focus,
+.auth-container .telInput input:focus,
+.auth-container .password input:focus {
+  border-color: var(--color-line);
+}
+.auth-container .telInput {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+.auth-container .telInput .countryCode {
+  flex: 1;
+}
+.auth-container .telInput .phoneNumber {
+  flex: 4;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.auth-container .password,
+.auth-container .emailInput,
+.auth-container .nameInput,
+.auth-container .telInput {
+  position: relative;
+}
+.auth-container .signInTogglePassword {
+  position: absolute;
+  top: 0px;
+}
+
+.signin .keepSigned {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.auth-container .keepSigned p {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+.signin .keepSigned a {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-family3);
+  font-style: italic;
+  color: var(--color-text);
+}
+.auth-container .keepSigned span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  user-select: none;
+}
+.auth-container .keepSigned .checkbox-container {
+  margin-top: 1rem;
+}
+
+.auth-container .checkbox {
+  height: 20px;
+  width: 20px;
+  accent-color: var(--color-text);
+  display: flex;
+  gap: 2rem;
+}
+
+.keepSigned .checkbox-container {
+  accent-color: var(--color-text);
+  display: flex;
+  gap: 2rem;
+}
+.authlink {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 1rem 0;
+}
+.authlink span {
+  cursor: pointer;
+}
+.auth-container .terms {
+  width: 100%;
+  font-size: 12px;
+  margin: 2rem 0 0.5rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+.auth-container .terms a {
+  font-weight: 600;
+  color: var(--color-text);
+}
+.auth-container .btn-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.auth-container .btn {
+  border: none;
+  padding: 1rem 3rem;
+  background: var(--color-line);
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 2rem auto 0;
+}
+
+@media screen and (max-width: 1175px) {
+  .auth-container {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 25%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .auth-container {
+    padding: 2rem 10%;
+  }
+}
+@media screen and (max-width: 591px) {
+  .auth-container {
+    padding: 2rem;
+  }
+}

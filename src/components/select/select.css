@@ -1,0 +1,44 @@
+.select-container{
+    width: 100%;
+    user-select: none;
+    font-family: var(--font-family);
+    margin: 2rem auto 0;
+    position: relative;
+}
+.select-container .select-btn{
+    width: fit-content;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.select-container .select-content{
+    width: fit-content;
+    left: 0;
+    position: absolute;
+    z-index: 5000000;
+    top: 150%;
+    padding: 2rem;
+    background: var(--subcolor-bg);
+    font-family: var(--font-family3);
+    font-weight: 400;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.select-container .select-content .select-item{
+    width: fit-content;
+    border-bottom: 2px solid var(--subcolor-bg);
+    cursor: pointer;
+}
+.select-container .select-content .selected{
+    border-bottom: 2px solid var(--color-line);
+}
+.select-container .select-content .select-item:hover{
+    border-bottom: 2px solid var(--color-line);
+}

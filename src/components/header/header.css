@@ -1,0 +1,110 @@
+.header{
+    background-color: var(--color-bg);
+    padding: 2rem 6rem;
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+.title{
+    flex: 1;
+}
+.title h1{
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--color-text);
+    font-family: var(--font-family3);
+}
+.searchSection{
+    flex: 1;
+}
+
+.header .links{
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 1rem;
+}
+.header .links p{
+    text-transform: uppercase;
+    color: var(--color-text);
+    font-family: var(--font-family2);
+    font-weight: 700;
+    line-height: 25px;
+    font-size: 0.8rem;
+    letter-spacing: 1.7px;
+    line-height: 1.33;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+.header .links .activeLink{
+    border-color: var(--color-line);
+    transition: ease-in-out 0.3s;
+}
+.header .links p:hover{
+    border-color: var(--color-line);
+    transition: ease-in-out 0.3s;
+}
+.header .input{
+    position: relative;
+}
+.header .searchIcon{
+    position: absolute;
+    left: 5px;
+    top: 15px;
+}
+.header .input button{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.header .input button:hover .submitIcon{
+    translate: 10px;
+}
+
+.header input{
+    border-width: 0px 0px 1px 0px;
+    width: 100%;
+    background: transparent;
+    border-color: var(--color-text);
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--font-family3);
+    padding: 0.5rem 2.5rem;
+}
+.header input::placeholder{
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 1175px) {
+    .header{
+        flex-direction: column;
+        padding: 4rem 8rem;
+        gap: 1.7rem;
+
+    }
+    .title{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 2.1rem;
+    }
+    .searchSection{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .searchSection{
+        width: 100%;
+    }
+    .header{
+        padding: 4rem 1.5rem;
+
+    }
+    .header .links{
+        gap: 1.5rem;
+    }
+}
