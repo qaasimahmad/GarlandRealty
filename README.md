@@ -1,0 +1,2 @@
+# GarlandRealty
+Abridged version
